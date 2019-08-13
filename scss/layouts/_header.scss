@@ -1,0 +1,32 @@
+.navbar-brand {
+    width: 170px;
+    
+}
+
+.imagetable {
+    box-shadow: 6px 6px 6px 6px;
+}
+
+.menu-menu-social-container{
+    ul{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+    }
+    .menu-item{
+      margin: 5px;
+      font-size: 0;
+      a::before{
+        content: '\f082';
+        font-family: 'ForkAwesome';
+        font-size: 2rem;
+      } 
+      &.menu-item-93 a::before{
+        content: '\f16d';
+      }
+      &.menu-item-94 a::before{
+        content: '\f081';
+      }
+    }
+  }

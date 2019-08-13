@@ -29,7 +29,9 @@ add_action( 'after_setup_theme', 'scratch_setup' );
 // Styles & scripts
 function scratch_scripts() {
 
-    wp_enqueue_style('google-font', 'https://fonts.googleapis.com/css?family=Raleway:500&display=swap');
+    wp_enqueue_style( 'googlefont', '//fonts.googleapis.com/css?family=Raleway:500&display=swap' );
+    wp_enqueue_style( 'googlefont', '//fonts.googleapis.com/css?family=Raleway:500,700&display=swap' );
+    wp_enqueue_style( 'googlefont', '//fonts.googleapis.com/css?family=Playfair+Display&display=swap' );
     wp_enqueue_style('forkawesome', 'https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css');
     wp_enqueue_style('main-style', get_template_directory_uri() . '/css/main.min.css' );
 

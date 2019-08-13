@@ -1,13 +1,13 @@
 {
   "name": "scratch",
   "version": "1.0.0",
-  "description": "Thème à partir de presque rien",
+  "description": "realhome",
   "main": "index.js",
   "scripts": {
     "build": "node-sass --output-style=compressed --source-map=css/main.css.map scss/main.scss css/main.min.css",
     "watch": "npm run build && npm run build -- -w"
   },
-  "author": "Fred Murie",
+  "author": "Yann Sanquer",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^4.3.1",
