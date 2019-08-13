@@ -6,15 +6,15 @@
  * @package scratch
  */
 $lastproprietes = get_posts( array(
-	'numberposts' => 5,
-  'post_type' => 'propriete',
-  'orderby' => 'rand'
+	'numberposts' => 6,
+    'post_type' => 'propriete',
+    'orderby' => 'rand'
 ) );
 
 $lastposts = get_posts( array(
 	'posts_per_page' => 1,
-  'post__in' => get_option( 'sticky_posts' ),
-  'ignore_sticky_posts' => 1
+    'post__in' => get_option( 'sticky_posts' ),
+    'ignore_sticky_posts' => 1
 ) );
 
 get_header(); 
@@ -25,7 +25,7 @@ get_header();
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
   <article <?php post_class(); ?>>
-    
+   
     <div class="entry-content container">
       <?php the_content() ?>
     </div>
@@ -41,10 +41,10 @@ get_header();
 
 </main>
 
-<section class="front-container">
+<section class="front-proprietes container">
   <?php if ( $lastproprietes ) : ?>
-    <div class="front-proprietes_grid">
-      <?php foreach ( $lastproprietes as $propriete ) :
+    <div class="front-proprietes_grid d-flex flex-wrap">
+      <?php foreach ( $lastproprietes as $post ) :
           setup_postdata( $post );	
 
           get_template_part( 'template-parts/content', 'propriete' );
@@ -60,7 +60,7 @@ get_header();
 
   <?php if ( $lastposts ) : ?>
 
-    <section class="front-sticky-post container my-5">
+    <section class="front-sticky-post container my-5 ">
       <?php foreach ( $lastposts as $post ) :
           setup_postdata( $post );	?>
 
