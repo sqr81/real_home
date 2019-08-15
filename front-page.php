@@ -42,6 +42,14 @@ get_header();
 </main>
 
 <section class="front-proprietes container">
+    <div class="title text-center m-5 pb-3">
+        <h1>Nos Propriétés</h1>
+        <hr width= "10%"/>
+        <p>Sui abnuens Nisibi palamve isdem abnuens iurgiis cogebatur Vrsicinus
+             anxius quam quam oblatrantibus sane agitabantur quam longe edocebat
+              notissimus abnuens imperiale notissimus consociatos metu et cerneret
+        </p> 
+    </div>
   <?php if ( $lastproprietes ) : ?>
     <div class="front-proprietes_grid d-flex flex-wrap">
       <?php foreach ( $lastproprietes as $post ) :
